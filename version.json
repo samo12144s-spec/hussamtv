@@ -1,6 +1,6 @@
 {
     "apk":  "https://github.com/samo12144s-spec/hussamtv/releases/latest/download/HUSSAM_TV.apk",
-    "versionCode":  5,
-    "versionName":  "1.4",
-    "notes":  "تفعيل زر Home والفتح التلقائي من الإعدادات"
+    "versionCode":  6,
+    "versionName":  "1.5",
+    "notes":  "رسالة ترحيب تشرح تفعيل زر Home والفتح التلقائي"
 }
