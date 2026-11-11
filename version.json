@@ -1,6 +1,6 @@
 {
-    "apk":  "https://github.com/samo12144s-spec/hussamtv/releases/download/v2.1/HUSSAM_TV.apk",
-    "versionCode":  12,
-    "versionName":  "2.1",
-    "notes":  "زر التحديث بجانب الشعار وشاشة «عن التطبيق» وإعدادات أريح"
+    "apk":  "https://github.com/samo12144s-spec/hussamtv/releases/download/v2.2/HUSSAM_TV.apk",
+    "versionCode":  13,
+    "versionName":  "2.2",
+    "notes":  "إعدادات زر Home من شاشة الشعار وتنبيه إذا توقف بعد التحديث"
 }
