@@ -1,0 +1,9 @@
+Alan Sans
+Copyright 2025 The Alan Sans Project Authors (https://github.com/alan-eu/Alan-Sans)
+Designers: Raphaël Ronot, Samar Zureik
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+The full license text is available with a FAQ at: https://openfontlicense.org
+
+(Copyright and license notice copied from the font files' own name table;
+the downloaded ZIP did not include a separate license file.)

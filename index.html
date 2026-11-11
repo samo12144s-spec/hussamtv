@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HUSSAM TV — واجهة عربية أنيقة لتلفزيونك</title>
+<meta name="description" content="HUSSAM TV: واجهة عربية مجانية لتلفزيونات Android TV وGoogle TV، فيها مواقيت الصلاة لمدينتك، القرآن الكريم، الدايناميك آيلاند، والثيمات.">
+<meta property="og:title" content="HUSSAM TV">
+<meta property="og:description" content="واجهة عربية أنيقة لتلفزيونك: مواقيت الصلاة، القرآن الكريم، دايناميك آيلاند وثيمات.">
+<meta property="og:image" content="images/home-gold.jpg">
+<link rel="icon" href="images/logo.png">
+<style>
+  @font-face { font-family:"AlanSans"; src:url("fonts/AlanSans-Regular.ttf") format("truetype"); font-weight:400; font-display:swap; }
+  @font-face { font-family:"AlanSans"; src:url("fonts/AlanSans-SemiBold.ttf") format("truetype"); font-weight:600; font-display:swap; }
+  @font-face { font-family:"AlanSans"; src:url("fonts/AlanSans-Bold.ttf") format("truetype"); font-weight:700; font-display:swap; }
+  :root { --bg:#070b17; --bg2:#0d1428; --card:rgba(255,255,255,.05); --line:rgba(255,255,255,.1); --text:#f2f4fa; --muted:#a8b0c6; --gold:#c9a94f; --gold2:#e8cf86; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:"AlanSans","Noto Naskh Arabic",Tahoma,sans-serif; line-height:1.7; }
+  a { color:inherit; }
+  .wrap { width:min(1120px,100% - 32px); margin:0 auto; }
+  header.top { position:sticky; top:0; z-index:10; backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(7,11,23,.72); border-bottom:1px solid var(--line); }
+  header.top .wrap { display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.5px; text-decoration:none; }
+  .brand img { height:30px; }
+  nav.links a { color:var(--muted); text-decoration:none; margin-inline-start:22px; font-size:15px; }
+  nav.links a:hover { color:var(--text); }
+  .hero { position:relative; padding:72px 0 40px; text-align:center; overflow:hidden; }
+  .hero::before { content:""; position:absolute; inset:-30% -10% auto; height:520px; background:radial-gradient(ellipse at 50% 40%,rgba(201,169,79,.18),transparent 60%),radial-gradient(ellipse at 20% 20%,rgba(80,110,220,.22),transparent 55%); pointer-events:none; }
+  .hero .logo { height:84px; position:relative; filter:drop-shadow(0 6px 24px rgba(80,140,255,.45)); }
+  .hero h1 { position:relative; margin:14px 0 6px; font-size:clamp(34px,6vw,58px); line-height:1.15; }
+  .hero h1 span { color:var(--gold2); }
+  .hero p.lead { position:relative; margin:0 auto; max-width:640px; color:var(--muted); font-size:clamp(16px,2.2vw,19px); }
+  .cta { position:relative; display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:28px 0 10px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:13px 26px; border-radius:999px; font-weight:600; font-size:16px; text-decoration:none; border:1px solid var(--line); background:var(--card); }
+  .btn.primary { background:linear-gradient(135deg,var(--gold2),var(--gold)); color:#1b1606; border-color:transparent; box-shadow:0 10px 30px rgba(201,169,79,.3); }
+  .btn:hover { transform:translateY(-1px); }
+  .meta { position:relative; color:var(--muted); font-size:13px; }
+  .shot { position:relative; margin:38px auto 0; width:min(1000px,100%); border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 80px rgba(0,0,0,.55); }
+  .shot img { display:block; width:100%; height:auto; }
+  section { padding:64px 0; }
+  h2 { font-size:clamp(26px,4vw,36px); margin:0 0 8px; text-align:center; }
+  .sub { text-align:center; color:var(--muted); margin:0 auto 34px; max-width:620px; }
+  .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:16px; }
+  .feature { padding:22px; border-radius:18px; background:var(--card); border:1px solid var(--line); }
+  .feature .ic { font-size:26px; }
+  .feature h3 { margin:8px 0 4px; font-size:19px; }
+  .feature p { margin:0; color:var(--muted); font-size:15px; }
+  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr)); gap:16px; }
+  .gallery figure { margin:0; border-radius:14px; overflow:hidden; border:1px solid var(--line); background:var(--bg2); }
+  .gallery img { display:block; width:100%; height:auto; }
+  .gallery figcaption { padding:10px 14px; color:var(--muted); font-size:14px; }
+  .install { background:linear-gradient(180deg,transparent,var(--bg2) 30%,var(--bg2) 70%,transparent); }
+  .code-box { display:flex; flex-direction:column; align-items:center; gap:6px; margin:0 auto 30px; padding:22px; width:min(420px,100%); border-radius:20px; border:1px solid rgba(201,169,79,.45); background:rgba(201,169,79,.07); text-align:center; }
+  .code-box .label { color:var(--muted); font-size:14px; }
+  .code-box .code { font-size:44px; font-weight:700; letter-spacing:6px; color:var(--gold2); direction:ltr; }
+  .steps { counter-reset:s; display:grid; gap:12px; max-width:720px; margin:0 auto; padding:0; list-style:none; }
+  .steps li { counter-increment:s; display:flex; gap:14px; align-items:flex-start; padding:16px 18px; border-radius:14px; background:var(--card); border:1px solid var(--line); }
+  .steps li::before { content:counter(s); flex:0 0 32px; height:32px; border-radius:50%; display:grid; place-items:center; font-weight:700; color:#1b1606; background:var(--gold); }
+  .steps b { color:var(--text); }
+  .steps span { color:var(--muted); }
+  .note { max-width:720px; margin:18px auto 0; color:var(--muted); font-size:14px; text-align:center; }
+  footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; text-align:center; }
+  @media (max-width:640px) { nav.links { display:none; } .hero { padding-top:44px; } }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#"><img src="images/logo.png" alt="">HUSSAM TV</a>
+  <nav class="links"><a href="#features">المميزات</a><a href="#gallery">صور</a><a href="#install">التثبيت</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <img class="logo" src="images/logo.png" alt="HUSSAM TV">
+  <h1>واجهة عربية <span>أنيقة</span> لتلفزيونك</h1>
+  <p class="lead">مواقيت الصلاة لمدينتك، القرآن الكريم بأصوات القرّاء، دايناميك آيلاند بالأدعية والآيات، وثيمات جميلة — مجاناً على Android TV وGoogle TV.</p>
+  <div class="cta">
+    <a class="btn primary" id="download" href="https://github.com/samo12144s-spec/hussamtv/releases/latest/download/HUSSAM_TV.apk">⬇ تنزيل التطبيق</a>
+    <a class="btn" href="#install">📺 التثبيت عبر Downloader</a>
+  </div>
+  <div class="meta">مجاني · بدون إعلانات · <span id="version">الإصدار 1.0</span></div>
+  <div class="shot"><img src="images/home-gold.jpg" alt="الشاشة الرئيسية لـ HUSSAM TV" width="1600" height="900"></div>
+</div></section>
+
+<section id="features"><div class="wrap">
+  <h2>كل ما تحتاجه بشاشة وحدة</h2>
+  <p class="sub">مصمّم للتحكم بالريموت، خفيف وسريع، وبالعربي بالكامل.</p>
+  <div class="features">
+    <div class="feature"><div class="ic">🕌</div><h3>مواقيت الصلاة لمدينتك</h3><p>تُحسب حسب مدينتك وطريقة الحساب المعتمدة في بلدك، مع عدّ تنازلي للصلاة القادمة وتنبيه عند الأذان.</p></div>
+    <div class="feature"><div class="ic">✨</div><h3>دايناميك آيلاند</h3><p>كبسولة أعلى الشاشة تعرض الصلاة والطقس والتاريخ، وتكبر من حين لآخر بدعاء أو آية.</p></div>
+    <div class="feature"><div class="ic">📖</div><h3>القرآن الكريم</h3><p>استمع لأي سورة بصوت قارئك المفضّل، ويستمر التشغيل حتى مع شاشة التوقف والتنقل.</p></div>
+    <div class="feature"><div class="ic">🎨</div><h3>أربع ثيمات</h3><p>الذهبي الملكي، الزمرّد الأندلسي، الليل الصافي، والشفق — مع خلفيات جميلة تختارها بنفسك.</p></div>
+    <div class="feature"><div class="ic">🌙</div><h3>شاشة توقف بالأحاديث</h3><p>ساعة كبيرة وحديث شريف ومواقيت الصلاة عندما يكون التلفزيون غير مستخدم.</p></div>
+    <div class="feature"><div class="ic">🔄</div><h3>تحديثات تلقائية</h3><p>عند صدور نسخة جديدة يظهر لك إشعار داخل التطبيق، وتحدّثه بضغطة.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2>صور من التطبيق</h2>
+  <p class="sub">لقطات حقيقية من شاشة التلفزيون.</p>
+  <div class="gallery">
+    <figure><img src="images/island.jpg" alt="" loading="lazy" width="1600" height="900"><figcaption>الدايناميك آيلاند مع دعاء</figcaption></figure>
+    <figure><img src="images/home-emerald.jpg" alt="" loading="lazy" width="1600" height="900"><figcaption>ثيم الزمرّد الأندلسي</figcaption></figure>
+    <figure><img src="images/home-aurora.jpg" alt="" loading="lazy" width="1600" height="900"><figcaption>ثيم الشفق</figcaption></figure>
+    <figure><img src="images/quran.jpg" alt="" loading="lazy" width="1600" height="900"><figcaption>القرآن الكريم</figcaption></figure>
+    <figure><img src="images/themes.jpg" alt="" loading="lazy" width="1600" height="900"><figcaption>الثيمات والخلفيات</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="install" class="install"><div class="wrap">
+  <h2>التثبيت على التلفزيون</h2>
+  <p class="sub">أسهل طريقة: تطبيق Downloader المجاني والكود التالي.</p>
+  <div class="code-box"><span class="label">كود Downloader</span><span class="code" id="downloader-code">قريباً</span></div>
+  <ol class="steps">
+    <li><div><b>ثبّت تطبيق Downloader</b><br><span>من متجر Google Play على التلفزيون (ابحث عن Downloader by AFTVnews).</span></div></li>
+    <li><div><b>اسمح له بتثبيت التطبيقات</b><br><span>الإعدادات ← التطبيقات ← الوصول الخاص ← تثبيت التطبيقات غير المعروفة ← فعّل Downloader.</span></div></li>
+    <li><div><b>اكتب الكود</b><br><span>افتح Downloader واكتب الكود في الخانة واضغط Go، فيبدأ التنزيل.</span></div></li>
+    <li><div><b>اضغط «تثبيت»</b><br><span>بعد التثبيت افتح HUSSAM TV، واختر مدينتك من الإعدادات لتظهر مواقيت الصلاة الصحيحة.</span></div></li>
+  </ol>
+  <p class="note">يعمل على تلفزيونات Android TV وGoogle TV (أندرويد 8 أو أحدث). لا يعمل على أنظمة مثل Tizen أو webOS.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">HUSSAM TV · مجاني · صُنع بحب للتلفزيونات العربية</div></footer>
+</body>
+</html>
