@@ -60,6 +60,15 @@
   .steps b { color:var(--text); }
   .steps span { color:var(--muted); }
   .note { max-width:720px; margin:18px auto 0; color:var(--muted); font-size:14px; text-align:center; }
+  .custom { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:28px; align-items:center; }
+  .custom figure { margin:0; border-radius:16px; overflow:hidden; border:1px solid rgba(201,169,79,.4); box-shadow:0 24px 60px rgba(0,0,0,.5); }
+  .custom figure img { display:block; width:100%; height:auto; }
+  .custom ul { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+  .custom li { display:flex; gap:12px; align-items:flex-start; padding:12px 14px; border-radius:14px; background:var(--card); border:1px solid var(--line); }
+  .custom li .ic { font-size:22px; line-height:1.3; }
+  .custom li b { display:block; font-size:16px; }
+  .custom li span { color:var(--muted); font-size:14px; }
+  @media (max-width:820px) { .custom { grid-template-columns:1fr; } }
   footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; text-align:center; }
   @media (max-width:640px) { nav.links { display:none; } .hero { padding-top:44px; } }
 </style>
@@ -67,7 +76,7 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="images/logo.png" alt="">HUSSAM TV</a>
-  <nav class="links"><a href="#features">المميزات</a><a href="#gallery">صور</a><a href="#install">التثبيت</a></nav>
+  <nav class="links"><a href="#features">المميزات</a><a href="#customize">التخصيص</a><a href="#gallery">صور</a><a href="#install">التثبيت</a></nav>
 </div></header>
 
 <main>
@@ -90,9 +99,25 @@
     <div class="feature"><div class="ic">🕌</div><h3>مواقيت الصلاة لمدينتك</h3><p>تُحسب حسب مدينتك وطريقة الحساب المعتمدة في بلدك، مع عدّ تنازلي للصلاة القادمة وتنبيه عند الأذان.</p></div>
     <div class="feature"><div class="ic">✨</div><h3>دايناميك آيلاند</h3><p>كبسولة أعلى الشاشة تعرض الصلاة والطقس والتاريخ، وتكبر من حين لآخر بدعاء أو آية.</p></div>
     <div class="feature"><div class="ic">📖</div><h3>القرآن الكريم</h3><p>استمع لأي سورة بصوت قارئك المفضّل، ويستمر التشغيل حتى مع شاشة التوقف والتنقل.</p></div>
+    <div class="feature"><div class="ic">🧩</div><h3>شاشتك على كيفك</h3><p>حرّك الساعة ومواقيت الصلاة وعدّاد رمضان وكل عنصر لأي مكان، وكبّره أو صغّره بالريموت.</p></div>
     <div class="feature"><div class="ic">🎨</div><h3>أربع ثيمات</h3><p>الذهبي الملكي، الزمرّد الأندلسي، الليل الصافي، والشفق — مع خلفيات جميلة تختارها بنفسك.</p></div>
     <div class="feature"><div class="ic">🌙</div><h3>شاشة توقف بالأحاديث</h3><p>ساعة كبيرة وحديث شريف ومواقيت الصلاة عندما يكون التلفزيون غير مستخدم.</p></div>
     <div class="feature"><div class="ic">🔄</div><h3>تحديثات تلقائية</h3><p>عند صدور نسخة جديدة يظهر لك إشعار داخل التطبيق، وتحدّثه بضغطة.</p></div>
+  </div>
+</div></section>
+
+<section id="customize"><div class="wrap">
+  <h2>خصّص شاشتك على كيفك</h2>
+  <p class="sub">كل شي بالشاشة الرئيسية قابل للتعديل: المكان والحجم والشكل. رتّبها مرة وبتنحفظ لحالها.</p>
+  <div class="custom">
+    <figure><img src="images/customize.jpg" alt="وضع تعديل الواجهة في HUSSAM TV" loading="lazy" width="1600" height="900"></figure>
+    <ul>
+      <li><span class="ic">✋</span><div><b>حرّك أي عنصر لأي مكان</b><span>الساعة، مواقيت الصلاة، باقي على رمضان، عيد الميلاد، شريط الأذكار… من «تعديل الواجهة» وبالأسهم فقط.</span></div></li>
+      <li><span class="ic">🔍</span><div><b>كبّر وصغّر كل عنصر</b><span>حجم الساعة أو مواقيت الصلاة أو أي عنصر على ذوقك، وزر «الترتيب الافتراضي» يرجّع كل شي بضغطة.</span></div></li>
+      <li><span class="ic">🖼️</span><div><b>خلفيات وثيمات</b><span>عشر خلفيات جميلة وأربع ثيمات، وكل ثيم بيغيّر الألوان وشكل أيقونات التطبيقات: بطاقات زجاجية، مربعات، دوائر أو أيقونات عائمة.</span></div></li>
+      <li><span class="ic">👁️</span><div><b>أظهر أو أخفِ ما تريد</b><span>الساعة، الطقس، عدّاد رمضان، عيد الميلاد، الأذكار، الدايناميك آيلاند… كل عنصر بزر.</span></div></li>
+      <li><span class="ic">🗂️</span><div><b>رتّب تطبيقاتك</b><span>ضغطة طويلة على أي تطبيق لنقله لأي مكان بالشريط أو إزالته.</span></div></li>
+    </ul>
   </div>
 </div></section>
 
