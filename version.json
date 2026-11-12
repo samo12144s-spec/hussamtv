@@ -1,6 +1,6 @@
 {
-    "apk":  "https://github.com/samo12144s-spec/hussamtv/releases/download/v2.2/HUSSAM_TV.apk",
-    "versionCode":  13,
-    "versionName":  "2.2",
-    "notes":  "إعدادات زر Home من شاشة الشعار وتنبيه إذا توقف بعد التحديث"
+    "apk":  "https://github.com/samo12144s-spec/hussamtv/releases/download/v2.6/HUSSAM_TV.apk",
+    "versionCode":  17,
+    "versionName":  "2.6",
+    "notes":  "آيلاند أذكى عند الأذان، زر إيقاف للقرآن، وكتابة أسهل في الإعدادات"
 }
