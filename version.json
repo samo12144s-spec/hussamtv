@@ -1,6 +1,6 @@
 {
-    "apk":  "https://github.com/samo12144s-spec/hussamtv/releases/download/v2.7/HUSSAM_TV.apk",
-    "versionCode":  18,
-    "versionName":  "2.7",
-    "notes":  "ملاحظة لمستخدمي Google TV حول زر Home"
+    "apk":  "https://github.com/samo12144s-spec/hussamtv/releases/download/v2.8/HUSSAM_TV.apk",
+    "versionCode":  20,
+    "versionName":  "2.8",
+    "notes":  "يشتغل على الأجهزة الأقدم، أوقات الصلاة بثلاث خيارات، الأذان، والأرقام العربية"
 }
